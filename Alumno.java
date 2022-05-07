@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class Alumno extends Persona {
         
-        int nota;
+        int nota = NotaAlumno();
 
         public Alumno(String nombre, int edad, char sexo){
 
@@ -8,6 +10,11 @@ public class Alumno extends Persona {
                 
         }
 
-        int NotaAlumno
+        int NotaAlumno(){
+                Scanner ingreso = new Scanner(System.in);
+                nota = ingreso.nextInt();
+                return nota;
+
+        }
 
 }
